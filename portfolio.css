@@ -1,0 +1,140 @@
+:root {
+    --main-bg: #f3eafc;
+    --section-bg: #ffffff;
+    --accent-color: #c299e9;
+    --accent-hover: #a878d3;
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    color: white;
+    position: relative;
+  }
+  
+  .profile-pic img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin-top: -45px;
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  
+  section {
+    background-color: var(--section-bg);
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    color: var(--accent-color);
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+  }
+  
+  button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: #f8f1fd;
+    border: 1px solid #d6c2ec;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive pour mobile */
+  @media screen and (max-width: 600px) {
+    .project-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cv-download {
+        text-align: center;
+      }
+      
+      .cv-download p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
+      .contact {
+        text-align: center;
+      }
+      
+      .contact-info {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+      }
+      
+      .contact-info li {
+        margin: 0.5rem 0;
+      }
+      
+      .contact a {
+        color: var(--accent-color);
+        text-decoration: none;
+      }
+      
+      .contact a:hover {
+        text-decoration: underline;
+      }
+      
+  }
+  
